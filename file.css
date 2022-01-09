@@ -1,0 +1,95 @@
+body{
+    background: grey;
+    font-family: sans-serif;
+}
+h1{
+    color: black;
+}
+
+.di2{
+    width: 70%;
+    height: 500px;
+    background-color: skyblue;
+}
+.ima1:hover{
+    transform: scale(1.5);
+}
+.ima2:hover{
+    transform: scale(1.5);
+}
+.ima3:hover{
+    transform: scale(1.5);
+}
+.ima4:hover{
+    transform: scale(1.5);
+}
+.ima5:hover{
+    transform: rotate(90deg);
+}
+.ima6:hover{
+    transform: skew(-45deg);
+}
+.imaa{
+    /* animation-name: red-to-black; */
+    /* animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;             /* it can be negative
+    animation-iteration-count: infinite;            its is a loop
+     animation-direction: alternate ;  */
+     animation:red-to-black 4s linear 2s infinite alternate;
+
+}
+.container
+{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+}
+.head{
+    margin: 10px;
+
+    height:30px;
+    width: 20px;
+}
+.item{
+    color: black;
+    background: grey;
+    height: 150px;
+    width: 100%;
+    margin: 5px 5px; 
+}
+#fle{
+    color: black;
+    margin: 5px 5px 5px 5px;
+}
+
+
+.grid{
+    display:grid;
+    grid-template-columns: auto;
+    background-color: grey;
+}
+.g-item{
+    height:150px;
+    width: 100%;
+    margin: 10px;
+}
+@keyframes red-to-black{
+    0%{
+        color: red;
+        background-color: black;
+        transform: translate(0px, 0px);
+    }
+    50%{
+        color: yellow;
+        background-color: red;
+        transform: translate(10px, 10px);
+    }
+    100%{
+        color: black;
+        background-color: blueviolet;
+        transform: translate(20px, 20px);
+    }
+  }
