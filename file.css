@@ -1,95 +1,153 @@
 body{
-    background: grey;
-    font-family: sans-serif;
+    background-image: url("data:image/jpeg;base64,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");
+    background-repeat: none;
+    background-size: contain;
+    text-transform: capitalize;
+    text-align: justify;
+    font-size: 1.15em;
+    font-family: "Times New Roman",serif;    /* types of font: sans-sarif,monospace,sarif*/
 }
-h1{
-    color: black;
+/* li:only-child{
+    color: green;
 }
+/* p{ */
+    /* color: rgb(73, 41, 41); */
+/* } */
+h2{
+    color: gold;
+}
+li{
+    color: silver;
+}
+li:nth-child(2){
+    background: radial-gradient(circle, red,blue,green);
+    color: silver;
+    font-weight: 600;
+}
+.title{
+    background: linear-gradient(to right,rgba(250,0,0),rgba(0,250,0),rgba(0,0,250,0));
+    font-weight: 800;  /*for text bolding should by meximum 800 and minimum 100;*/
+}
+#link1:link{  
+    color: grey;
+}
+#link1:visited{
+    color:violet;
+}
+h1+p{
+    color: silver;
+}
+h3{
+    color: slateblue;
+}
+h3 + p{
+    color: silver;
+}
+td{
 
-.di2{
-    width: 70%;
-    height: 500px;
-    background-color: skyblue;
+    color: goldenrod;
 }
-.ima1:hover{
-    transform: scale(1.5);
+h3:hover {
+    color: silver;
 }
-.ima2:hover{
-    transform: scale(1.5);
+h2+p{                   /*p present in h2 is selected*/
+    color:silver ;
 }
-.ima3:hover{
-    transform: scale(1.5);
+li ul {
+   color: silvers;
 }
-.ima4:hover{
-    transform: scale(1.5);
+input~button{
+    color: gold;
 }
-.ima5:hover{
+#link1{
+    text-decoration: underline;
+}
+.italic{
+    font-style: oblique;
+}
+/* font-family */
+h4{
+    color: seagreen;
+}
+.btn{
+    margin: 20px 10px;
+    padding: 10px 15px;
+    border: 1;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: white;
+    background-color: skyblue ;
+    transition: all 500ms ease;
+    /* for max browser support */
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    /*use for animation 2s is time to change color on hover & ease/linear/
+    ease-in-out is property to switch color last is delay time*/
+
+    /* for browser old version not supportin we use prop
+    1-  -webkit-  for chrome
+    1-  -moz-      for mozilla firfox
+    3-  -o-        for oppera brow*/
+     
+}
+.btn:hover{
+    background-color: black;
+    padding: 20px 30px;
+
+    /* diff transform functions */
+    
+    transform: translate(50px,50px);
+            /*transform is use to move and translate means to axis
+            so it moves 50px on x-axis & 50px on y-axis */
+}
+.ima{margin: 10px 10px 10px 10px;
+    transition: all 1s ease-in-out ;
+}
+.ima:hover{
+    /* with transition: ; */
+    transform: scale(2.5);
+    transform: translate3d(50px, 20px);
+    /* scale() inscreases the size of a picture; */
+}
+.im2:hover{
+    /* without transition: ; */
+    transform: scale(2);
     transform: rotate(90deg);
 }
-.ima6:hover{
-    transform: skew(-45deg);
+.im3:hover{
+   
+    /* transform: skewX(-45deg); */
+    transform: matrix(1, 0.45, 0.45, 1, 100,50);
 }
-.imaa{
-    /* animation-name: red-to-black; */
-    /* animation-duration: 3s;
+ /* '''''''''''''''''''''''''''''adding the animation'''''''''''''''''''''''''' */
+ .abut{
+    color: chartreuse;
+    animation-name: red-to-black;
+    animation-duration: 3s;
     animation-timing-function: ease-in-out;
-    animation-delay: 2s;             /* it can be negative
-    animation-iteration-count: infinite;            its is a loop
-     animation-direction: alternate ;  */
-     animation:red-to-black 4s linear 2s infinite alternate;
-
-}
-.container
-{
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-}
-.head{
-    margin: 10px;
-
-    height:30px;
-    width: 20px;
-}
-.item{
-    color: black;
-    background: grey;
-    height: 150px;
-    width: 100%;
-    margin: 5px 5px; 
-}
-#fle{
-    color: black;
-    margin: 5px 5px 5px 5px;
-}
-
-
-.grid{
-    display:grid;
-    grid-template-columns: auto;
-    background-color: grey;
-}
-.g-item{
-    height:150px;
-    width: 100%;
-    margin: 10px;
-}
-@keyframes red-to-black{
+    animation-delay: 2s;  /* it can be negative*/
+    animation-iteration-count: infinite;  /* its is a loop*/
+     animation-direction: alternate ;    /*it can be normal, alternate and reverse and alternate-reverse */
+    /* All in one prop is */
+    animation: red-to-black 4s linear 2s 2 alternate ;
+    /* ''''''''''''''''''duration/  timing/ delay loopor itration count/ direction*/
+ }
+/* '''''''''''''''''creating animations''''''''''''''''''''''  */
+/*  we need to write @ before declaration where @ is a prefix*/
+  @keyframes red-to-black{
     0%{
-        color: red;
-        background-color: black;
+        background: red;
         transform: translate(0px, 0px);
     }
     50%{
-        color: yellow;
-        background-color: red;
+        background: blueviolet;
         transform: translate(10px, 10px);
     }
     100%{
-        color: black;
-        background-color: blueviolet;
+        background: black;
         transform: translate(20px, 20px);
     }
   }
+ 
